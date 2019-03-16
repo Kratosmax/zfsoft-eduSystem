@@ -1,0 +1,5 @@
+{
+    "files.autoGuessEncoding": true,
+    "code-runner.runInTerminal": true,
+    "code-runner.saveAllFilesBeforeRun": true
+}
