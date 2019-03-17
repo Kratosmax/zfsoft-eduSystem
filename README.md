@@ -32,6 +32,7 @@
 2. 按F12
 3. 打开Element，Ctrl+F搜索xkkz_id
 4. 复制那段代码，这段代码就是xkkz_id
+5. 其实我发现每个人都一样的，不管哪个校区都是，所以可能不需要获取
 ![获取xkkz](获取xkkz.png "获取xkkz")
 
 
