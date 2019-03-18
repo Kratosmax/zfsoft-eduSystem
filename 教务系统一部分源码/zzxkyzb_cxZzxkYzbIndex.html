@@ -1,0 +1,323 @@
+
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="zh-CN">
+
+
+<head>
+	<title>&nbsp;</title>
+	
+
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="Copyright" content="zfsoft" />	
+<link rel="icon" href="/jwglxt/logo/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/jwglxt/logo/favicon.ico" type="image/x-icon" />
+<style type="text/css">	
+	.active{font-weight: bolder;}
+	#navbar-tabs li{ margin-top: 2px;}
+	#navbar-tabs li a{ border-top: 2px solid transparent;}
+	#navbar-tabs li.active a{border-top: 2px solid #0770cd;}
+</style>	
+<!--jQuery核心框架库 -->
+<script type="text/javascript" src="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/js/other_jquery/jquery-1.12.4.min.js?ver=20170713"></script>
+<script type="text/javascript" src="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/js/jquery-migrate-1.4.1.min.js?ver=20170713"></script>
+<!--jQuery浏览器检测 -->
+<script type="text/javascript" src="/jwglxt/js/browse/browse-judge.js?ver=20170713"></script>
+<script type="text/javascript">
+	//浏览器版本验证
+	var broswer = broswer();
+	if(broswer.msie==true||broswer.safari==true||broswer.mozilla==true||broswer.chrome==true){
+		if(broswer.msie==true&&broswer.version<9){
+		   window.location.href = _path+"/xtgl/init_cxBrowser.html";
+		}
+	}else{
+		 window.location.href = _path+"/xtgl/init_cxBrowser.html";
+	}
+</script>
+<script type="text/javascript">
+var _path 				= "/jwglxt";
+var _systemPath 		= "/jwglxt";
+var _stylePath 			= "http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2";
+var _reportPath 		= "http://10.0.10.187:81/WebReport";
+var _refreshInterval	= "10";
+var _localeKey 			= "zh_CN";
+</script>
+<!--
+jquery.ui 需要在bootstrap之前加载，解决冲突问题
+http://blog.csdn.net/remote_roamer/article/details/14105999
+-->
+<script type="text/javascript" src="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/js/jquery-ui-custom.contact-1.0.0.js?ver=20170713"></script>
+<!--Bootstrap布局框架-->
+<link rel="stylesheet" type="text/css" href="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/plugins/bootstrap/css/bootstrap.min.css?ver=20170713" />
+<link rel="stylesheet" type="text/css" href="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/css/error.css?ver=20170713" />
+<link rel="stylesheet" type="text/css" href="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/css/zftal-ui.css?ver=20170713" />
+<script type="text/javascript" src="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/plugins/bootstrap/js/bootstrap.min.js?ver=20170713" charset="utf-8"></script>
+<!--jQuery常用工具扩展库：基础工具,资源加载工具,元素尺寸相关工具 -->
+<script type="text/javascript" src="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/js/zftal/jquery.utils.contact-min.js?ver=20170713" charset="utf-8"></script>
+<!--jQuery基础工具库：$.browser,$.cookie,$.actual等 -->
+<script type="text/javascript" src="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/js/zftal/jquery.plugins.contact-min.js?ver=20170713" charset="utf-8"></script>
+<!--jQuery自定义event事件库 -->
+<script type="text/javascript" src="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/js/zftal/jquery.events.contact-min.js?ver=20170713" charset="utf-8"></script>
+<!--JavaScript对象扩展库：Array,Date,Number,String -->
+<script type="text/javascript" src="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/js/zftal/jquery.extends.contact-min.js?ver=20170713" charset="utf-8"></script>
+<!--Bootbox弹窗插件-->
+<link rel="stylesheet" type="text/css" href="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/plugins/bootbox/css/bootbox.css?ver=20170713" />
+<script src="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/plugins/bootbox/bootbox.concat-min.js?ver=20170713" type="text/javascript" charset="utf-8"></script>
+<script src="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/plugins/bootbox/lang/zh_CN.js?ver=20170713" type="text/javascript" charset="utf-8"></script>
+
+<!--jQuery模拟滚动条库-->
+<link rel="stylesheet" type="text/css" href="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/plugins/customscrollbar/css/jquery.mCustomScrollbar.min.css?ver=20170713" />
+<script type="text/javascript" src="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/plugins/customscrollbar/js/jquery.mCustomScrollbar.min.js?ver=20170713" charset="utf-8"></script>
+<!--jQuery.chosen美化插件-->
+<link rel="stylesheet" type="text/css" href="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/plugins/chosen/css/chosen-min.css?ver=20170713" />
+<script type="text/javascript" src="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/plugins/chosen/jquery.choosen.concat-min.js?ver=20170713" charset="utf-8"></script>
+<script type="text/javascript" src="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/plugins/chosen/lang/zh_CN-min.js?ver=20170713" charset="utf-8"></script>
+<script type="text/javascript" src="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/js/utils/jquery.utils.pinyin.min.js?ver=20170713" charset="utf-8"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/js/html5shiv.min.js?ver=20170713" charset="utf-8"></script>
+<script type="text/javascript" src="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/js/respond.min.js?ver=20170713" charset="utf-8"></script>
+<![endif]-->
+<!--业务框架jQuery全局设置和通用函数库-->
+<script type="text/javascript" src="/jwglxt/js/jquery.zftal.contact-min.js?ver=20170713"></script>
+<!--国际化js库 -->
+<script type="text/javascript" src="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/plugins/i18n/jquery.i18n-min.js?ver=20170713" charset="utf-8"></script>
+<!--全局国际化js. -->
+<script type="text/javascript" src="/jwglxt/js/globalweb/i18n-global_zh_CN.js?ver=20170713" charset="utf-8"></script>
+<!--业务框架前端脚本国际化库-->
+<script type="text/javascript" src="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/js/zftal/lang/jquery.zftal_zh_CN-min.js?ver=20170713"></script>
+<!--密码强弱判断-->
+<script type="text/javascript" src="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/js/utils/jquery.utils.strength.min.js?ver=20170713"></script>
+
+	
+	
+
+
+
+
+	
+<script type="text/javascript">
+
+	var _path 		= "/jwglxt";
+	var _systemPath = "/jwglxt";
+	var _stylePath  = "http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2";
+	var _reportPath = "http://10.0.10.187:81/WebReport";
+	var _localeKey 			= "zh_CN";
+	
+	jQuery(function($){
+		$('[data-toggle*="validation"]').trigger("validation");
+		$('[data-toggle*="fixed"]').trigger("fixed");
+		if($.fn.tooltip){
+			$('[data-toggle*="tooltip"]').tooltip({container:'body'});
+		}
+	});
+	
+</script>
+<!--教务系统通用业务js引用:比如学年，学期等公共的信息会放在这里-->
+<script type="text/javascript" src="/jwglxt/js/globalweb/comp/i18n/jwglxt-common_zh_CN.js?ver=20170713"></script>
+<!--业务模块的properties初始化-->
+<!--国际化js库 -->
+
+
+</head>
+<body>
+<input type="hidden" id="pkey" name="pkey" value="" />
+	<!-- 头部 开始 -->
+	<header class="navbar-inverse top2">
+		<div class="container" id="navbar_container">
+					<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+					<span class="sr-only"> 自主选课</span> 
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" id="topButton" class="navbar-brand" onclick="onClickMenu('/xsxk/zzxkyzb_cxZzxkYzbIndex.html','N253512')">
+					自主选课
+				</a>
+				<script type="text/javascript">
+					document.title="自主选课";
+				</script>
+			</div>
+		</div>
+<!-- navbar-end  -->
+		</div>
+	</header>
+	
+	<!--头部 结束 -->
+	<div style="width: 100%; padding: 0px; margin: 0px;" id="bodyContainer">
+		<!-- requestMap中的参数为系统级别控制参数，请勿删除 -->
+		<form id="requestMap">
+			 <input type="hidden" id="sessionUserKey" value="2016044743006" /> 
+			 
+			 	<input type="hidden" id="gnmkdmKey" value="N253512" />
+			 
+			 
+		</form>
+		<div class="container container-func sl_all_bg" id="yhgnPage">
+			<div id="innerContainer">
+				<!-- 放置页面显示内容 -->
+				
+
+<!doctype html>
+
+				
+	<div id="searchBox"></div> 
+	
+ 	
+ 	
+ 	
+ 		<div class="col-md-12 col-sm-12 border-b"  style="padding:8px 0px;">
+			<div  style="float:left;padding:10px 15px;">
+				<h5>
+				<font id="xkxn"></font> 学年 <font id="xkxq"></font> 学期<font id="txt_xklc"></font><span id="sysj"></span>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>选课要求</b>总学分最低&nbsp;<font color="red">0</font>
+				
+					&nbsp;&nbsp;最高&nbsp;<font color="red">1000</font>
+				
+				&nbsp;&nbsp;&nbsp;已获得学分&nbsp;&nbsp;<font color="red">133.5</font>&nbsp;&nbsp;&nbsp;本学期已选学分&nbsp;&nbsp;<font color="red" id="yxxfs">0</font>
+				</h5>
+			</div>
+			<div style="margin-right:20px;float:right;padding:8px 15px;">
+				<div style="float:left;">
+					<p style="margin-top:4px;margin-right:5px;float:left;border:1px solid #BCE8F1;background-color:#D9EDF7;height:15px;width:30px;"></p>未选
+				</div>
+				<div style="float:left;margin-left:20px">
+					<p style="margin-top:4px;margin-right:5px;float:left;border:1px solid #BCE8F1;background-color:#fff7b2;height:15px;width:30px;"></p>重修未选
+				</div>
+				<div style="float:left;margin-left:20px">
+					<p style="margin-top:4px;margin-right:5px;float:left;border:1px solid #BCE8F1;background-color:#C1FFC1;height:15px;width:30px;"></p>已选
+				</div>
+			</div>
+		</div>
+		<input type="hidden" name="iskxk" id="iskxk" value="1"/>
+		<input type="hidden" name="jzxkf" id="jzxkf" value="0"/>
+		<input type="hidden" name="xkzgmc" id="xkzgmc" value="100"/>
+		<input type="hidden" name="xkzgxf" id="xkzgxf" value="1000"/>
+		<input type="hidden" name="zkcs" id="zkcs" value="5"/>
+		<input type="hidden" name="zxfs" id="zxfs" value="18.0"/>
+		<input type="hidden" name="bdzcbj" id="bdzcbj" value="2"/>
+		<input type="hidden" name="xkxnm" id="xkxnm" value="2018"/>
+		<input type="hidden" name="xkxqm" id="xkxqm" value="12"/>
+		<input type="hidden" name="xkxnmc" id="xkxnmc" value="2018-2019"/>
+		<input type="hidden" name="xkxqmc" id="xkxqmc" value="2"/>
+		<input type="hidden" name="xh_id" id="xh_id" value="2016044743006"/>
+		<input type="hidden" name="xqh_id" id="xqh_id" value="1"/>
+		<input type="hidden" name="jg_id_1" id="jg_id_1" value="201"/>
+		<input type="hidden" name="zyh_id" id="zyh_id" value="0409"/>
+		<input type="hidden" name="zyfx_id" id="zyfx_id" value="wfx"/>
+		<input type="hidden" name="njdm_id" id="njdm_id" value="2016"/>
+		<input type="hidden" name="bh_id" id="bh_id" value="04091601"/>
+		<input type="hidden" name="xbm" id="xbm" value="1"/>
+		<input type="hidden" name="zh" id="zh" value=""/>
+		<input type="hidden" name="xslbdm" id="xslbdm" value="wlb"/>
+		<input type="hidden" name="ccdm" id="ccdm" value="3"/>
+		<input type="hidden" name="xsbj" id="xsbj" value="4294967296"/>
+		<input type="hidden" name="sjhm" id="sjhm" value="15899973428"/>
+		<input type="hidden" name="xszxzt" id="xszxzt" value="1"/>
+		<input type="hidden" name="t_njdm_id" id="t_njdm_id" value="2016"/>
+		<input type="hidden" name="t_zyh_id" id="t_zyh_id" value="0409"/>
+		<input type="hidden" name="sfxsxkbz" id="sfxsxkbz" value="0"/>
+		<input type="hidden" name="jxbzbkg" id="jxbzbkg" value="1"/>
+		<input type="hidden" name="tykpzykg" id="tykpzykg" value="0"/>
+		<input type="hidden" name="tkdxyzms" id="tkdxyzms" value="0"/>
+		<input type="hidden" name="jxbzhkg" id="jxbzhkg" value="0"/>
+		<input type="hidden" name="kxqxktskg" id="kxqxktskg" value="0"/>
+		
+		<input type="hidden" name="xkczbj" id="xkczbj" value="1"/>
+		<input type="hidden" name="isSlct" id="isSlct" value="0"/>
+		<input type="hidden" name="kklxdm" id="kklxdm" value=""/>
+		<input type="hidden" name="xkkz_id" id="xkkz_id" value=""/>
+		<input type="hidden" name="jxbzb" id="jxbzb" value=""/>
+		<!-- 只有一个页签时，不显示页签 -->
+			
+				<input type="hidden" name="firstKklxdm" id="firstKklxdm" value="10"/>
+				<input type="hidden" name="firstXkkzId" id="firstXkkzId" value="82DD4849EB5653B6E0530100007F8CC2"/>
+		 	
+		 	<div class="panel panel-info"><ul class="nav"></ul></div>
+		
+		
+	
+	<div id="displayBox"></div>
+	<div id="choosedBox"></div>
+	<div id="endsign" style="display:none; text-align:center; height: 50px"><i class="red">......已到最后......</i></div><!-- （共 <font id="searchCount"></font> 条记录） -->
+	<!-- <div id="waitsign" style="display:none; text-align:center; height: 50px"><i class="red bigger-300 icon-spinner icon-spin"></i></div> -->
+	<div id="more" style="text-align:center; display:none"><font color="#2a6496" size="5">[<a href="javascript:void(0)" id="nextPage">点此查看更多</a>]</font></div>
+<!--jQuery.jqGrid -->
+<link rel="stylesheet" type="text/css" href="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/plugins/jqGrid/css/jquery.jqgrid.css?ver=20170713" />
+<script type="text/javascript" src="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/plugins/jqGrid/jquery.jqgrid.src-min.js?ver=20170713" charset="utf-8"></script>
+<script type="text/javascript" src="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/plugins/jqGrid/jquery.jqgrid.contact-min.js?ver=20170713" charset="utf-8"></script>
+<script type="text/javascript" src="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/plugins/jqGrid/lang/zh_CN.js?ver=20170713" charset="utf-8"></script>
+<script type="text/javascript" src="/jwglxt/js/plugins/jqGrid4.6/jquery.jqgrid.settings.js?ver=20170713" charset="utf-8"></script>
+<script type="text/javascript" src="/jwglxt/js/plugins/jqGrid4.6/jquery.jqGrid-min.js?ver=20170713" charset="utf-8"></script>
+<!--jQuery.validation -->
+<link rel="stylesheet" type="text/css" href="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/plugins/validation/css/jquery.validate-min.css?ver=20170713" />
+<script type="text/javascript" src="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/plugins/validation/js/jquery.validate-min.js?ver=20170713" charset="utf-8"></script>
+<script type="text/javascript" src="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/plugins/validation/js/jquery.validate.contact-min.js?ver=20170713" charset="utf-8"></script>
+<script type="text/javascript" src="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/plugins/validation/js/jquery.validate.methods.contact-min.js?ver=20170713" charset="utf-8"></script>
+<script type="text/javascript" src="http://jw.gpnu.edu.cn/zftal-ui-v5-1.0.2/assets/plugins/validation/lang/zh_CN-min.js?ver=20170713" charset="utf-8"></script>
+<script type="text/javascript">
+	jQuery(function($){
+		$('[data-toggle*="validation"]').trigger("validation");
+	});
+</script>
+
+<link rel="stylesheet" type="text/css" href="/jwglxt/js/plugins/searchbox/css/jquery.searchbox-min.css?ver=20170713" />
+<script type="text/javascript" src="/jwglxt/js/plugins/searchbox/jquery.searchbox.contact-min.js?ver=20170713" charset="utf-8"></script>
+
+<script type="text/javascript" src="/jwglxt/js/comp/jwglxt/xkgl/xsxk/zzxkYzb.js?ver=20170713"></script>
+<!--<script type="text/javascript" src="/jwglxt/js/comp/jwglxt/xkgl/xsxk/zzxkYzb_icetor.js?ver=20170713"></script>-->
+
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	
+
+<!-- footer --> 
+<div id="footerID" class="footer">
+	<p>版权所有&copy; Copyright 1999-2017  正方软件股份有限公司　　中国·杭州西湖区紫霞街176号 互联网创新创业园2号301</p>
+</div>
+<!-- footer-end -->
+	<!-- footer-end -->
+</body>
+<script type="text/javascript">
+	jQuery(function($) {	
+		if ($("#navbar-tabs").length > 0) {
+			$("#navbar-tabs li:eq(0) a").tab('show');
+		}
+		
+		setMinheight();
+		
+		$('#yhgnPage').resize(function(){
+			var minHeight  = $(this).data('min-height');
+			var innerHeight =  $('#innerContainer').outerHeight(true);
+			//console.log("minHeight:" + minHeight + ",innerHeight:" + innerHeight);
+			$(this).css('min-height', Math.max(minHeight,innerHeight));
+		});
+		
+		function setMinheight(){
+			//计算grid页面高度
+			var docuemntHeight = $(document).height();
+			var topHeight = $('header').height();
+			var footerHeight = $('.footer').height();
+			var containerHeight = docuemntHeight-topHeight-footerHeight-60;
+			$('#yhgnPage').css('min-height',containerHeight).data('min-height',containerHeight);
+		}
+	});
+	//加载title名称，根据系统内置表设置，取菜单名称或者系统名称
+	jQuery(document).attr("title",'自主选课');
+</script>
+
+</html>

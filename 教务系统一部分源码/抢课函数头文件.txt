@@ -1,0 +1,56 @@
+Request URL: http://10.0.10.184/jwglxt/xsxk/zzxkyzb_xkBcZyZzxkYzb.html?gnmkdm=N253512&su=2016044743006
+Request Method: POST
+Status Code: 200 OK
+Remote Address: 10.0.10.184:80
+Referrer Policy: no-referrer-when-downgrade
+
+
+Content-Encoding: gzip
+Content-Language: zh-CN
+Content-Length: 32
+Content-Type: application/json;charset=UTF-8
+Date: Sat, 16 Mar 2019 01:44:14 GMT
+Server: Apache-Coyote/1.1
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+
+
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 306
+Content-Type: application/x-www-form-urlencoded;charset=UTF-8
+Cookie: JSESSIONID=E0C946ABAC72117C255E1004CA8D6D63
+DNT: 1
+Host: 10.0.10.184
+Origin: http://10.0.10.184
+Pragma: no-cache
+Referer: http://10.0.10.184/jwglxt/xsxk/zzxkyzb_cxZzxkYzbIndex.html?gnmkdm=N253512&layout=default&su=2016044743006
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36
+X-Requested-With: XMLHttpRequest
+
+
+gnmkdm: N253512
+su: 2016044743006
+
+
+jxb_ids: 7DE5113EAAD01D51E0530100007F21ED
+kch_id: 110990258
+kcmc: (110990258)道家修炼文化 - 2.0 学分
+rwlx: 2
+rlkz: 0
+rlzlkz: 1
+sxbj: 1
+xxkbj: 0
+qz: 0
+cxbj: 0
+xkkz_id: 82DD4849EB5653B6E0530100007F8CC2
+njdm_id: 2016                   #年级代码
+zyh_id: 0409
+kklxdm: 10
+xklc: 2                         # 第几轮
+xkxnm: 2018
+xkxqm: 12
